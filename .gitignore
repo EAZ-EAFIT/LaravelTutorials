@@ -1,24 +1,93 @@
-*.log
-.DS_Store
-.env
-.env.backup
-.env.production
-.phpactor.json
-.phpunit.result.cache
-/.fleet
-/.idea
-/.nova
-/.phpunit.cache
-/.vscode
-/.zed
-/auth.json
+# Laravel specific
+# Laravel & PHP
+/vendor
 /node_modules
-/public/build
-/public/hot
 /public/storage
 /storage/*.key
-/storage/pail
-/vendor
+.env
+.phpunit.result.cache
+Homestead.yaml
+Homestead.json
+/.vagrant
+
+# Laravel 12 specific cache & logs
+/storage/logs/*
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/bootstrap/cache/*
+
+# Ignore IDE & editor files
+/.idea
+/.vscode
+*.swp
+*.swo
+*.swn
+*.swm
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# NPM / Yarn build artifacts
+/public/hot
+/public/build
+/public/mix-manifest.json
+
+# Composer lock if you want fresh installs (optional, not always ignored)
+# composer.lock
+
+# PHPUnit cache
+.phpunit.cache
+
+# Laravel Pint
+/.pint.cache
+
+# Build files
+/public/build
+/public/mix-manifest.json
+
+# Cache and logs
 Homestead.json
 Homestead.yaml
+npm-debug.log
+yarn-error.log
+/.nova
+/.phpactor.json
+bootstrap/cache/*.php
+
+# IDE and OS files
+/.idea
+/.vscode
+/.fleet
+/.zed
+/.phpunit.cache
+.DS_Store
 Thumbs.db
+*.swp
+*.swo
+*~
+
+# Database
+*.sqlite
+*.sqlite3
+database.sqlite
+
+# Logs
+*.log
+
+# Coverage directory
+coverage/
+
+# Environment files
+.env.local
+.env.testing
+.env.example
+# Ignore git files
+.git
+.gitignore
+.gittattributes
+
+# Temporary folders
+tmp/
+temp/
