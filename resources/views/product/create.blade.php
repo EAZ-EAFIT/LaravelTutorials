@@ -31,7 +31,7 @@
 @endif
 
 
-<form method="POST" action="{{ route('product.created') }}">
+<form method="POST" action="{{ route('product.save') }}">
 
 @csrf
 

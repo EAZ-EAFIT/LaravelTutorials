@@ -26,16 +26,17 @@
 
 </h5>
 
-<p class="card-text">{{ $viewData["product"]["description"] }}</p>
+
 
     @if ($viewData["product"]["price"] > 100)
         <p class="card-text text-danger">${{ $viewData["product"]["price"] }} USD</p>
 
     @else
         <p class="card-text">${{ $viewData["product"]["price"] }} USD</p>
-
-
     @endif
+    @foreach($viewData["product"]->comments as $comment)
+        - {{ $comment->getDescription() }}<br />
+    @endforeach
 
 
 </div>
